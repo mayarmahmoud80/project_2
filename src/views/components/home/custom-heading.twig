@@ -1,0 +1,10 @@
+{% set tag = fields.heading_tag|default('h2') %}
+{% set text = fields.heading_text|default('') %}
+
+<section class="custom-heading">
+  <div class="container">
+    {% if text %}
+      <{{ tag }}>{{ text }}</{{ tag }}>
+    {% endif %}
+  </div>
+</section>
